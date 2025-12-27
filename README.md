@@ -9,49 +9,83 @@ All tools in this repository are intended to be used **only on systems with prop
 
 ## 🛠️ Projects Included
 
+# 1. File Integrity Monitoring System (Python)
+
+## 📌 Overview
+The File Integrity Monitoring System is a Python-based security tool designed to detect unauthorized changes in files. It works by calculating and comparing cryptographic hash values to ensure file integrity. This concept is widely used in intrusion detection systems (IDS) and malware detection.
+
+This project is intended strictly for educational and authorized security monitoring purposes.
+
 ---
 
-### 🛡️ 1. File Integrity Monitoring System
-The File Integrity Monitoring System is a defensive security tool that monitors specified files for unauthorized modifications using cryptographic hashing (SHA-256). This technique is commonly used in intrusion detection systems (IDS) to detect malware activity or unauthorized access.
+## ⚙️ Features
+- Monitors specified files for unauthorized modifications
+- Uses SHA-256 hashing to verify file integrity
+- Detects changes and raises alerts instantly
+- Continuously monitors files in real time
+- Lightweight and easy to configure
 
-**Key Features**
-- Monitors selected files for unauthorized changes
-- Uses SHA-256 hashing for integrity verification
-- Detects and alerts on file modification
-- Continuous real-time monitoring
+---
 
-**Concepts Used**
-- Cryptographic hashing
+## 🧠 Concepts Used
+- Cryptographic hashing (SHA-256)
 - File system monitoring
 - Intrusion detection fundamentals
+- Defensive cybersecurity techniques
 
-**How to Run**
+---
+
+## 🛠️ Technologies Used
+- Python 3
+- hashlib module
+- os module
+- time module
+
+---
+
+## ▶️ How to Run
+
+### 1️⃣ Setup
+Create or choose a file to monitor (example: `test.txt`) and add it to the script:
+```python
+FILES_TO_MONITOR = ["test.txt"]
+
+
+# 2.Multithreaded Port Scanner (Python)
+
+## 📌 Overview
+The Multithreaded Port Scanner is a Python-based network reconnaissance tool designed for ethical hacking and cybersecurity learning. It scans a target system to identify open TCP ports and optionally performs basic banner grabbing to detect running services.
+
+This project is intended strictly for educational purposes and authorized security testing.
+
+---
+
+## ⚙️ Features
+- Scans common TCP ports (20–1024)
+- Uses multithreading for faster scanning
+- Detects open ports on a target system
+- Attempts basic service/banner detection
+- Lightweight and easy to use
+
+---
+
+## 🧠 Concepts Used
+- Socket programming
+- Multithreading
+- Network reconnaissance
+- Timeout handling
+
+---
+
+## 🛠️ Technologies Used
+- Python 3
+- socket module
+- threading module
+
+---
+
+## ▶️ How to Run
+
+### 1️⃣ Run the Program
 ```bash
-python file_integrity_monitor.py
-
-
-**🔐 2. Multithreaded Port Scanner**
-
-The Multithreaded Port Scanner is a network reconnaissance tool that scans a target system to identify open TCP ports. It uses multithreading to improve scanning speed and optionally performs basic banner grabbing to identify running services.
-
-**Key Features**
-
-Scans common TCP ports (20–1024)
-
-Uses multithreading for faster execution
-
-Detects open ports
-
-Performs basic service/banner detection
-
-**Concepts Used**
-
-Socket programming
-
-Multithreading
-
-Network reconnaissance
-
-**How to Run**
-
 python port_scanner.py
