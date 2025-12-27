@@ -1,0 +1,23 @@
+import hashlib
+import os
+import time
+
+FILES_TO_MONITOR = ["test.txt"]
+hashes = {}
+
+def calculate_hash(file):
+    with open(file, "rb") as f:
+        return hashlib.sha256(f.read()).hexdigest()
+
+for file in FILES_TO_MONITOR:
+    hashes[file] = calculate_hash(file)
+
+print("Monitoring started...")
+
+while True:
+    for file in FILES_TO_MONITOR:
+        new_hash = calculate_hash(file)
+        if new_hash != hashes[file]:
+            print(f"[ALERT] File modified: {file}")
+            hashes[file] = new_hash
+    time.sleep(5)
