@@ -103,3 +103,44 @@ and help students understand real-world security tools.
 Legal and Ethical Notice:
 Unauthorized scanning or monitoring of systems you do not own is illegal.
 Always obtain proper authorization before performing any security testing.
+
+--------------------------------------------------
+3. File Encryption & Decryption Tool (Python)
+--------------------------------------------------
+
+## 📌 Overview
+The File Encryption & Decryption Tool is a Python-based security application that protects files by encrypting their contents using a reversible encryption technique. The same process can be used to decrypt the file when the correct key is applied.
+
+This project demonstrates the basic principles of file security and cryptography and is intended strictly for educational and authorized use.
+
+---
+
+## ⚙️ Features
+- Encrypts files to protect sensitive data
+- Decrypts encrypted files using the same key
+- Works on any file type (text, image, document, etc.)
+- Simple and lightweight implementation
+- Safe and reversible encryption logic
+
+---
+
+## 🧠 Concepts Used
+- File handling (binary read/write)
+- Basic cryptography concepts
+- XOR-based encryption logic
+- Data security fundamentals
+
+---
+
+## 🛠️ Technologies Used
+- Python 3
+- Built-in file handling libraries
+- Tkinter (for GUI version, if applicable)
+
+---
+
+## ▶️ How to Run
+
+### 1️⃣ Run the Program
+```bash
+python file_encryptor.py
